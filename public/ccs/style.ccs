@@ -1,0 +1,95 @@
+/* Background Image with Overlay */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+}
+.mountain {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid brown;
+    position: relative;
+}
+.snow {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid white;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+/* Semi-Transparent Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark Overlay */
+    z-index: 1;
+}
+
+/* Centered Login Form */
+.login-card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Input Fields */
+.input-field {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+}
+
+/* Sign In Button */
+.btn-login {
+    background: #ff8c66;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #ff704d;
+}
+
+/* Social Buttons */
+.social-login {
+    margin-top: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
